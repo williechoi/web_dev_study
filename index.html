@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-analytics.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-firestore.js"></script>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<h1>Calorie Table</h1>
+		<div class="content">
+			<form id="add-calorie-form">
+				<input type="text" name="name" placeholder="Food name">
+				<input type="text" name="calorie" placeholder="Calorie per 100g of food">
+				<button>Add Food</button>
+			</form>
+			<ul id="food-list"></ul>
+		</div>
+		<script>
+			var firebaseConfig = {
+				apiKey: "AIzaSyAwqFOBgdLar9naezOkaZNTliB0LIBzBL0",
+				authDomain: "fir-project1-abe1e.firebaseapp.com",
+				projectId: "fir-project1-abe1e",
+				storageBucket: "fir-project1-abe1e.appspot.com",
+				messagingSenderId: "947630658025",
+				appId: "1:947630658025:web:f44fad1ce3cc3634e6fb78",
+				measurementId: "G-P7EZWQZ0PS"
+			};
+			firebase.initializeApp(firebaseConfig);
+			firebase.analytics();
+			const db = firebase.firestore();
+		</script>
+		<script src="app.js"></script>
+	</body>
+</html>
