@@ -1,0 +1,22 @@
+/*************************************
+ *
+ * Author: Hyungsuk AKA the net Ninja
+ * Date: 3.06.15
+ *
+ *************************************/
+
+/* Style all P tags */
+p {
+    font-size: 18px;
+    color: red;
+
+}
+
+#header p {
+    font-size: 24px;
+}
+
+/* Style all header tags */
+h1 {
+    font-size: 44px;
+}
